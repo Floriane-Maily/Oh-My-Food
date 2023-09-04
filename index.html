@@ -4,75 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avec Oh My Food, composez votre propre menu et commandez en ligne !</title>
+    <title>Page d'accueil Oh My Food, réservez le menu qui vous convient</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-
+    <link href="./assets/style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="main-container">
         <header>
-            <img src="assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+            <p class="logo">Ohmyfood</p>
+            <div class="location">
+                <form method="get" action="#">
+                    <img src="./assets/images/Pin.svg" alt="recherche par localisation">
+                    <input type="search" name="city" placeholder="Paris, Belleville">
+                </form>
+            </div>
+
         </header>
-        <form class="location" method="get" action="#">
-            <img src="assets/images/Pin.svg" alt="recherche par localisation">
-            <input type="search" name="city" placeholder="Paris, Belleville" class="city">
-        </form>
+
+        <section class="presentation">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <p class="btn-gradient">Explorez nos restaurants</p>
+        </section>
+
+
+
+        <main>
+            <section class="steps">
+                <h1>Fonctionnement</h1>
+                <div class="btn">
+                    <img class="ellipse" src="./assets/images/Ellipse 2.svg">
+                    <p class="number">1</p>
+                    <div class="content">
+                        <img src="./assets/images/mobile-screen-button.svg">
+                        <p>Choisissez un restaurant</p>
+                    </div>
+                </div>
+                <div class="btn">
+                    <img class="ellipse" src="./assets/images/Ellipse 2.svg">
+                    <p class="number">2</p>
+                    <div class="content">
+                        <img src="./assets/images/list-ul.svg">
+                        <p>Composez votre menu</p>
+                    </div>
+                </div>
+                <div class="btn">
+                    <img class="ellipse" src="./assets/images/Ellipse 2.svg">
+                    <p class="number">3</p>
+                    <div class="content">
+                        <img src="./assets/images/store.svg">
+                        <p>Dégustez au restaurant</p>
+                    </div>
+
+            </section>
+
+
+            <section class="restaurants">
+                <h1>Restaurants</h1>
+                <article class="restaurants-cards">
+                    <a href="#" class="card">
+                        <img src="./assets/images/restaurants/palette.jpg">
+
+
+
+
+            </section>
+        </main>
+
+        <footer>
+            <p class="logo">Ohmyfood</p>
+            <ul>
+                <li>
+                    <img src="./assets/images/couverts.svg">
+                    <a href="">Proposer un restaurant</a>
+                </li>
+                <li>
+                    <img src="./assets/images/shakehands.svg">
+                    <a href="">Devenir partenaire</a>
+                </li>
+                <li><a href="">Mentions légales</a></li>
+                <li><a href="">Contactez-nous</a></li>
+            </ul>
+        </footer>
     </div>
 
-    <section class="presentation">
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <div class="button">
-            <p>Explorez nos restaurants</p>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
 </body>
 
 </html>
