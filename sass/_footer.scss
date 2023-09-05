@@ -1,0 +1,23 @@
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--footer-bg-color);
+    padding: 22px 25px;
+    row-gap: 16px;
+}
+
+.footer__logo {
+    font-family: "Shrikhand";
+    color: var(--white);
+    font-size: 18px;
+}
+
+footer li {
+    list-style-type: none;
+    margin-bottom: 7px;
+}
+
+footer a {
+    color: var(--white);
+}
