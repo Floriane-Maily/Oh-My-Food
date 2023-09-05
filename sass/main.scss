@@ -25,6 +25,10 @@
     max-width: 1440px;
 }
 
+.logo {
+    font-size: "Shrikhand";
+}
+
 a {
     text-decoration: none;
     color: var(--black);
@@ -46,6 +50,8 @@ h1 {
 /**** version mobile ****/
 
 @media screen and (min-width: 320px) and (max-width: 767.98px) {
+
+    @import "_header.scss";
 
     .presentation {
         display: flex;
@@ -171,5 +177,7 @@ h1 {
         height: 21px;
         width: 22px;
     }
+
+    @import "_footer.scss";
 
 }

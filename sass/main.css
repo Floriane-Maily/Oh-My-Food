@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #9356DC;
+  --second-color: #FF79DA;
+  --third-color: #99E2D0;
+  --white: #FFFF;
+  --black: #101010;
+  --bg-main: #F6F6F6;
+  --grey: #EAEAEA;
+  --pin-font-color: #008766;
+  --footer-bg-color: #353535;
+  font-family: "Roboto";
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.logo {
+  font-size: "Shrikhand";
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.btn-gradient {
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(190deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+/**** version mobile ****/
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 113px;
+  }
+  .header__logo {
+    font-family: "Shrikhand";
+    font-size: 30px;
+    display: flex;
+    margin: auto;
+  }
+  .header__location {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: var(--grey);
+  }
+  header form {
+    display: flex;
+    margin: auto;
+    -moz-column-gap: 17px;
+         column-gap: 17px;
+  }
+  header input {
+    color: var(--black);
+    background-color: var(--grey);
+    border: none;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-main);
+    height: 287px;
+    text-align: center;
+    justify-content: center;
+  }
+  .presentation h1 {
+    margin-right: 58px;
+    margin-left: 42px;
+    margin-bottom: 18px;
+  }
+  .presentation p {
+    color: var(--footer-bg-color);
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .presentation .btn-gradient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 27px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+  }
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+    padding-top: 48px;
+  }
+  .fonctionnement h1 {
+    padding-left: 20px;
+  }
+  .fonctionnement .fonctionnement__btn {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    width: 80%;
+    height: 73px;
+    margin-top: 25px;
+    background-color: var(--bg-main);
+    border: 1px solid var(--bg-main);
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+  .fonctionnement .ellipse {
+    position: relative;
+    right: 10px;
+  }
+  .fonctionnement .number {
+    position: relative;
+    right: 27px;
+    bottom: 0.2px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .fonctionnement .content {
+    display: flex;
+    justify-content: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    font-weight: 500;
+  }
+  /**** section restaurants  ****/
+  .restaurants {
+    height: 1200px;
+    background-color: var(--main-color);
+  }
+  .restaurants h1 {
+    padding: 54px 0 0 20px;
+  }
+  .restaurants__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 20px;
+  }
+  .restaurants__cards h2 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .restaurants__cards img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 174px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+  .restaurants__cards .card {
+    height: 251px;
+    background-color: var(--white);
+    border-radius: 15px;
+  }
+  /* .restaurants__content {
+      display: flex;
+      flex-direction: column;
+  } */
+  .restaurants__cards .default-heart {
+    height: 21px;
+    width: 22px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--footer-bg-color);
+    padding: 22px 25px;
+    row-gap: 16px;
+  }
+  .footer .logo {
+    color: var(--white);
+    font-size: 18px;
+  }
+  footer li {
+    list-style-type: none;
+    margin-bottom: 7px;
+  }
+  footer a {
+    color: var(--white);
+  }
+}/*# sourceMappingURL=main.css.map */
