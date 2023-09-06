@@ -2,21 +2,22 @@
 footer {
     display: flex;
     flex-direction: column;
-    background-color: var(--footer-bg-color);
+    background-color: $footer-bg-color;
     padding: 22px 25px;
     row-gap: 16px;
+    .logo {
+        color: $white-color;
+        font-size: 18px;
+        }
+    li {
+        list-style-type: none;
+        margin-bottom: 7px;
+    }
+    a {
+        color: $white-color;
+    }
+    .font {
+        font-weight: 500;
+    }
 }
-
-.footer .logo {
-    color: var(--white);
-    font-size: 18px;
-}
-
-footer li {
-    list-style-type: none;
-    margin-bottom: 7px;
-}
-
-footer a {
-    color: var(--white);
-}
+    
