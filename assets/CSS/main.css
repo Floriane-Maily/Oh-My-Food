@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+}
+
+a {
+  text-decoration: none;
+  color: #101010;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.logo,
+.title-menu {
+  font-family: "Shrikhand";
+}
+
+/**** version mobile ****/
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 113px;
+  }
+  header .logo {
+    font-size: 30px;
+    display: flex;
+    margin: auto;
+  }
+  header .location {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #EAEAEA;
+  }
+  header .location form {
+    display: flex;
+    margin: auto;
+    -moz-column-gap: 17px;
+         column-gap: 17px;
+  }
+  header .location form input {
+    background-color: #EAEAEA;
+    border: none;
+  }
+  header .location form input::-moz-placeholder {
+    color: #101010;
+    opacity: 1;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+  }
+  header .location form input::placeholder {
+    color: #101010;
+    opacity: 1;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    height: 287px;
+    text-align: center;
+    justify-content: center;
+  }
+  .presentation h1 {
+    margin-right: 58px;
+    margin-left: 42px;
+    margin-bottom: 18px;
+  }
+  .presentation p {
+    color: #353535;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .presentation .btn-gradient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 27px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(190deg, #9356DC -11.44%, #FF79DA 123.93%);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+    padding-top: 48px;
+  }
+  .fonctionnement h1 {
+    padding-left: 20px;
+  }
+  .fonctionnement .btn {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    width: 80%;
+    height: 73px;
+    margin-top: 25px;
+    background-color: #F6F6F6;
+    border: 1px solid #F6F6F6;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+  .fonctionnement .ellipse {
+    position: relative;
+    right: 10px;
+  }
+  .fonctionnement .number {
+    position: relative;
+    right: 27px;
+    bottom: 0.2px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .fonctionnement .content {
+    display: flex;
+    justify-content: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    font-weight: 500;
+  }
+  /**** section restaurants  ****/
+  .restaurants {
+    height: 1200px;
+    background-color: #F6F6F6;
+  }
+  .restaurants h1 {
+    padding: 54px 0 0 20px;
+  }
+  .restaurants__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 20px;
+  }
+  .restaurants__cards .card {
+    position: relative;
+    height: 251px;
+    background-color: white;
+    border-radius: 15px;
+  }
+  .restaurants__cards .card img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 174px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+  .restaurants__cards .card .badge {
+    position: absolute;
+    bottom: 80%;
+    left: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 29px;
+    border-radius: 2px;
+    background-color: #99E2D0;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #008766;
+    font-weight: 500;
+  }
+  .card .card-content {
+    height: 77px;
+    padding: 16px 0 12px 13px;
+  }
+  .card-content .card-txt {
+    position: relative;
+  }
+  .card-content .card-txt h2 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .card-content .card-txt p {
+    font-size: 17px;
+    font-weight: 300;
+  }
+  .card-content .card-txt .fa-heart {
+    position: absolute;
+    left: 80%;
+    bottom: 50%;
+    transform: translate(10px, 10px);
+    font-size: 22px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    padding: 22px 25px;
+    row-gap: 16px;
+  }
+  footer .logo {
+    color: white;
+    font-size: 18px;
+  }
+  footer li {
+    list-style-type: none;
+    margin-bottom: 7px;
+  }
+  footer a {
+    color: white;
+  }
+  footer .font {
+    font-weight: 500;
+  }
+}/*# sourceMappingURL=main.css.map */
