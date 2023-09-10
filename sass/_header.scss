@@ -5,33 +5,34 @@ header {
     height: 113px;
 
     .logo {
-    font-size: 30px;
-    display: flex;
-    margin: auto;
+        font-size: 30px;
+        display: flex;
+        margin: auto;
     }
 
     .location {
-    display: flex;
-    width: 100%;
-    height: 50px;
-    background-color: $grey-color;
-    form {
-    display: flex;
-    margin: auto;
-    column-gap: 17px;
-        input {  
+        display: flex;
+        width: 100%;
+        height: 50px;
         background-color: $grey-color;
-        border: none;
-    } 
-    input::placeholder {
-            color: $black-color;
-            font-family: $main-font-family;
-            font-size: 16px;
-            font-weight: 500;
-             }
-        }  
+
+        form {
+            display: flex;
+            margin: auto;
+            column-gap: 17px;
+
+            input {
+                background-color: $grey-color;
+                border: none;
+            }
+
+            input::placeholder {
+                color: $black-color;
+                opacity: 1;
+                font-family: $main-font-family;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
     }
 }
-
-   
-  
