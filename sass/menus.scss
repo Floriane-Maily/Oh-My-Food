@@ -1,0 +1,32 @@
+@import "_variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $main-font-family;
+
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+}
+
+a {
+    text-decoration: none;
+    color: $black-color;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.title-menu {
+    font-family: $secondary-font-family;
+}
+
+
+// Mobile first 
+
+@import "_header.scss";

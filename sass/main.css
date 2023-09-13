@@ -19,7 +19,6 @@ h1 {
   font-weight: 700;
 }
 
-.logo,
 .title-menu {
   font-family: "Shrikhand";
 }
@@ -31,7 +30,6 @@ header {
   height: 113px;
 }
 header .logo {
-  font-size: 30px;
   display: flex;
   margin: auto;
 }
@@ -200,11 +198,23 @@ header .location form input::placeholder {
   font-size: 17px;
   font-weight: 300;
 }
-.restaurants__cards .card .card-content .fa-heart {
+.restaurants__cards .card .card-content i {
   position: absolute;
   left: 85%;
   bottom: 45%;
   font-size: 22px;
+}
+.restaurants__cards .card .card-content .fa-solid {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 3s;
+}
+.restaurants__cards .card .card-content .fa-solid:hover {
+  opacity: 1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(190deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 footer {
@@ -264,7 +274,11 @@ footer .font {
     font-size: 15px;
   }
   .restaurants__cards {
-    padding: 28px 50px 20px 50px;
+    padding: 28px 100px;
+  }
+  .restaurants__cards .card .badge {
+    position: absolute;
+    left: 85%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -274,7 +288,17 @@ footer .font {
   }
   .fonctionnement {
     padding: 50px 180px;
-    margin-bottom: 30px;
+  }
+  .fonctionnement h1 {
+    text-align: left;
+  }
+  .fonctionnement__btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: flex-end;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    margin-top: 25px;
   }
   .fonctionnement__btn .btn {
     width: 300px;
@@ -285,15 +309,25 @@ footer .font {
   }
   .restaurants {
     height: auto;
-    background-color: aqua;
+    padding-bottom: 30px;
+  }
+  .restaurants h1 {
+    padding-left: 180px;
+    margin-bottom: 28px;
   }
   .restaurants__cards {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    gap: 18px;
-    padding: 20px;
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+    row-gap: 50px;
+    padding: 0 180px;
   }
   .restaurants__cards .card {
-    width: 490px;
+    width: 100%;
+  }
+  .restaurants__cards .card .badge {
+    position: absolute;
+    left: 70%;
   }
 }/*# sourceMappingURL=main.css.map */
