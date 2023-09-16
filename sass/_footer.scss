@@ -6,9 +6,11 @@ footer {
     row-gap: 16px;
 
     .logo {
+        font-family: $secondary-font-family;
         color: $white-color;
         font-size: 18px;
     }
+
 
     li {
         list-style-type: none;
