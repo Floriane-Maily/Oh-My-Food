@@ -10,21 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/a84ac70906.js" crossorigin="anonymous"></script>
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="sass/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="loader">
-        <span><i class="fa-solid fa-bowl-food"></i></span>
-        <span><i class="fa-solid fa-bowl-food"></i></span>
-        <span><i class="fa-solid fa-bowl-food"></i></span>
+    <div class="loader-bg">
+        <div class="loader">
+            <i class="fa-solid fa-utensils"></i>
+        </div>
     </div>
 
     <header>
-        <img class="logo" src="../assets/images/logo/ohmyfood@2x.svg">
+        <img class="logo" src="assets/images/logo/ohmyfood@2x.svg">
         <div class="location">
             <form method="get" action="#">
-                <img src="../assets/images/icones/Pin.svg" alt="recherche par localisation">
+                <img src="assets/images/icones/Pin.svg" alt="recherche par localisation">
                 <input type="search" name="city" placeholder="Paris, Belleville">
             </form>
         </div>
@@ -42,26 +42,26 @@
 
             <div class="fonctionnement__btn">
                 <div class="btn">
-                    <img src="../assets/images/icones/ellipse.svg" class="ellipse" alt="première étape">
+                    <img src="assets/images/icones/ellipse.svg" class="ellipse" alt="première étape">
                     <p class="number">1</p>
                     <div class="content">
-                        <img src="../assets/images/icones/mobile-screen-button.svg" alt="icone représentant un mobile">
+                        <img src="assets/images/icones/mobile-screen-button.svg" alt="icone représentant un mobile">
                         <p>Choisissez un restaurant</p>
                     </div>
                 </div>
                 <div class="btn">
-                    <img src="../assets/images/icones/ellipse.svg" class="ellipse" alt="deuxième étape">
+                    <img src="assets/images/icones/ellipse.svg" class="ellipse" alt="deuxième étape">
                     <p class="number">2</p>
                     <div class="content">
-                        <img src="../assets/images/icones/list-ul.svg" alt="icone représentant une liste">
+                        <img src="assets/images/icones/list-ul.svg" alt="icone représentant une liste">
                         <p>Composez votre menu</p>
                     </div>
                 </div>
                 <div class="btn">
-                    <img src="../assets/images/icones/ellipse.svg" class="ellipse" alt="troisième étape">
+                    <img src="assets/images/icones/ellipse.svg" class="ellipse" alt="troisième étape">
                     <p class="number">3</p>
                     <div class="content">
-                        <img src="../assets/images/icones/store.svg" alt="icone représentant un commerce">
+                        <img src="assets/images/icones/store.svg" alt="icone représentant un commerce">
                         <p>Dégustez au restaurant</p>
                     </div>
                 </div>
@@ -71,8 +71,8 @@
         <section class="restaurants">
             <h1>Restaurants</h1>
             <article class="restaurants__cards">
-                <a href="../restaurants/menu_palette.html" class="card">
-                    <img src="../assets/images/restaurants/palette.jpg"
+                <a href="../restaurants/palette.jpg" class="card">
+                    <img src="assets/images/restaurants/palette.jpg"
                         alt="photo d'un plat au restaurant La palette du goût, nouveau restaurant">
                     <div class="badge">Nouveau</div>
                     <div class="card-content">
@@ -84,7 +84,7 @@
                 </a>
 
                 <a href="../restaurants/menu_note.html" class="card">
-                    <img src="../assets/images/restaurants/note.jpg"
+                    <img src="assets/images/restaurants/note.jpg"
                         alt="photo d'un plat au restaurant La note enchantée, nouveau restaurant">
                     <div class="badge">Nouveau</div>
                     <div class="card-content">
@@ -95,7 +95,7 @@
                     </div>
                 </a>
                 <a href="../restaurants/menu_francaise.html" class="card">
-                    <img src="../assets/images/restaurants/francaise.jpg"
+                    <img src="assets/images/restaurants/francaise.jpg"
                         alt="photo d'un plat au restaurant A la française">
                     <div class="card-content">
                         <h2>A la française</h2>
@@ -106,7 +106,7 @@
 
                 </a>
                 <a href="../restaurants/menu_delice.html" class="card">
-                    <img src="../assets/images/restaurants/delice.jpg"
+                    <img src="assets/images/restaurants/delice.jpg"
                         alt="photo d'un plat au restaurant Le délice des sens">
                     <div class="card-content">
                         <h2>Le délice des sens</h2>
@@ -123,11 +123,11 @@
         <p class="logo">Ohmyfood</p>
         <ul>
             <li>
-                <img src="../assets/images/icones/couverts.svg" alt="icone représentant des couverts">
+                <img src="assets/images/icones/couverts.svg" alt="icone représentant des couverts">
                 <a class="font" href="">Proposer un restaurant</a>
             </li>
             <li>
-                <img src="../assets/images/icones/shakehands.svg" alt="icone représentant une poignée de mains">
+                <img src="assets/images/icones/shakehands.svg" alt="icone représentant une poignée de mains">
                 <a class="font" href="">Devenir partenaire</a>
             </li>
             <li><a href="">Mentions légales</a></li>
