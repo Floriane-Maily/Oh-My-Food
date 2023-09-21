@@ -11,7 +11,55 @@ a {
 }
 
 h1 {
+  font-size: 24px;
   font-weight: 700;
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes loader-anim {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1.5);
+  }
+}
+.loader-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  overflow: hidden;
+  background-color: #353535;
+  animation: disappear 3s;
+}
+.loader-bg .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(190deg, #9356DC -11.44%, #FF79DA 123.93%);
+  border-top: 16px solid #9356DC;
+  border-right: 16px solid #99E2D0;
+  border-bottom: 16px solid #9356DC;
+  border-left: 16px solid #99E2D0;
+  border-radius: 100px;
+  animation: loader-anim 2s linear;
+}
+.loader-bg .loader i {
+  font-size: 60px;
+  margin: auto;
 }
 
 header {
@@ -98,13 +146,12 @@ header .location form input::placeholder {
   height: 440px;
   padding-top: 48px;
 }
-.fonctionnement h1 {
-  padding-left: 20px;
+.fonctionnement .title {
+  margin-left: 20px;
 }
 .fonctionnement__btn {
   display: flex;
   flex-direction: column;
-  justify-items: center;
 }
 .fonctionnement__btn .btn {
   display: flex;
@@ -139,18 +186,18 @@ header .location form input::placeholder {
 
 /**** section restaurants  ****/
 .restaurants {
-  height: 1200px;
   background-color: #F6F6F6;
 }
-.restaurants h1 {
-  padding: 54px 0 0 20px;
+.restaurants .title {
+  padding-top: 54px;
+  margin-left: 20px;
 }
 
 .restaurants__cards {
   display: grid;
   grid-template-columns: 1fr;
   gap: 18px;
-  padding: 20px;
+  padding: 20px 20px 66px 20px;
 }
 
 .restaurants__cards .card {
@@ -207,84 +254,80 @@ header .location form input::placeholder {
   -webkit-background-clip: text;
           background-clip: text;
   background-image: linear-gradient(190deg, #9356DC -11.44%, #FF79DA 123.93%);
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .restaurants__cards .card .card-content .fa-solid:hover {
   opacity: 1;
 }
+
 @media screen and (min-width: 768px) {
-  .restaurants__cards .card .fonctionnement {
+  .fonctionnement {
     height: auto;
-    padding-bottom: 50px;
+    padding: 50px 15px;
   }
-  .restaurants__cards .card .fonctionnement__btn {
+  .fonctionnement .title {
+    padding-left: 20px;
+    margin: 0;
+  }
+  .fonctionnement__btn {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
   }
-  .restaurants__cards .card .fonctionnement__btn .btn {
-    width: 235px;
-  }
-  .restaurants__cards .card .fonctionnement__btn .btn .content {
+  .fonctionnement__btn .content {
     gap: 10px;
-    font-size: 15px;
+    font-size: 14px;
   }
-  .restaurants__cards .card .restaurants__cards {
-    padding: 28px 100px;
+  .restaurants {
+    padding: 30px;
   }
-  .restaurants__cards .card .restaurants__cards .card .badge {
-    position: absolute;
-    left: 85%;
+  .restaurants .title {
+    margin: 0;
+  }
+  .restaurants__cards {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin-top: 28px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-  .restaurants__cards .card .presentation {
+  .presentation {
     height: auto;
     padding: 30px 0 30px 0;
   }
-  .restaurants__cards .card .fonctionnement {
-    padding: 0 180px 30px 180px;
+  .fonctionnement {
+    padding: 50px 20px;
   }
-  .restaurants__cards .card .fonctionnement h1 {
-    text-align: left;
-  }
-  .restaurants__cards .card .fonctionnement__btn {
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-    margin-top: 25px;
-  }
-  .restaurants__cards .card .fonctionnement__btn .btn {
+  .fonctionnement .btn {
     width: 300px;
   }
-  .restaurants__cards .card .fonctionnement__btn .btn .content {
+  .fonctionnement .btn .content {
     gap: 20px;
     font-size: 16px;
   }
-  .restaurants__cards .card .restaurants {
+  .restaurants {
+    padding: 30px 180px;
     height: auto;
-    padding: 0 180px 30px 180px;
-    padding-bottom: 30px;
   }
-  .restaurants__cards .card .restaurants h1 {
-    padding-left: 180px;
-    margin-bottom: 28px;
+  .restaurants .title {
+    padding: 0;
+    margin: 0;
   }
-  .restaurants__cards .card .restaurants__cards {
+  .restaurants__cards {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     -moz-column-gap: 100px;
          column-gap: 100px;
     row-gap: 50px;
-    padding: 0 180px;
   }
-  .restaurants__cards .card .restaurants__cards .card {
+  .restaurants__cards .card {
     width: 100%;
   }
-  .restaurants__cards .card .restaurants__cards .card .badge {
+  .restaurants__cards .card .badge {
     position: absolute;
     left: 70%;
   }
 }
-
 footer {
   display: flex;
   flex-direction: column;
