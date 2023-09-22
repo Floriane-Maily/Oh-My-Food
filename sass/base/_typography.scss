@@ -1,1 +1,64 @@
-@import url('https: //fonts.googleapis.com/css2?family=Shrikhand&family=Roboto:wght@300;400;500;700&display=swap')
+* {
+    font-family: $main-font-family;
+}
+
+a {
+    text-decoration: none;
+    color: $black-color;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+// index.html
+.presentation {
+    p {
+        color: $dark-grey-color;
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+.card-content {
+    h2 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 17px;
+        font-weight: 300;
+    }
+}
+
+// version tablette
+
+.fonctionnement {
+    .content {
+        gap: 10px;
+        font-size: 14px;
+    }
+}
+
+// version desktop
+
+.fonctionnement {
+    .content {
+        gap: 20px;
+        font-size: 16px;
+    }
+}
+
+// menus
+
+.title-menu h1 {
+    font-size: 28px;
+    font-family: $secondary-font-family;
+}
+
+.menu-cards h2 {
+    font-size: 16px;
+    font-weight: 300;
+}

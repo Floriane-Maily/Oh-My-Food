@@ -5,26 +5,14 @@
 @import "./components/loader";
 @import "./layout/header";
 @import "./layout/footer";
+@import "./layout/form";
+@import "./pages/menu";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: $main-font-family;
 }
-
-a {
-    text-decoration: none;
-    color: $black-color;
-}
-
-h1 {
-    font-size: 24px;
-    font-weight: 700;
-}
-
-
-// Mobile first 
 
 .presentation {
     display: flex;
@@ -36,12 +24,6 @@ h1 {
 
     h1 {
         padding: 0 58px 18px 42px;
-    }
-
-    p {
-        color: $dark-grey-color;
-        font-size: 18px;
-        font-weight: 300;
     }
 }
 
@@ -138,9 +120,9 @@ h1 {
         width: 80px;
         height: 29px;
         border-radius: 2px;
-        background-color: $pin-bg-color;
+        background-color: $green-color;
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-        color: $pin-txt-color;
+        color: $dark-green-color;
         font-weight: 500;
     }
 
@@ -148,16 +130,6 @@ h1 {
         position: relative;
         height: 77px;
         padding: 16px 0 12px 13px;
-
-        h2 {
-            font-size: 18px;
-            font-weight: 700;
-        }
-
-        p {
-            font-size: 17px;
-            font-weight: 300;
-        }
 
         i {
             position: absolute;
@@ -200,13 +172,7 @@ h1 {
             flex-direction: row;
             justify-content: center;
             gap: 30px;
-
-            .content {
-                gap: 10px;
-                font-size: 14px;
-            }
         }
-
     }
 
     .restaurants {
@@ -238,11 +204,6 @@ h1 {
 
         .btn {
             width: 300px;
-
-            .content {
-                gap: 20px;
-                font-size: 16px;
-            }
         }
     }
 

@@ -42,17 +42,15 @@
         height: 200px;
         background-image: $btn-gradient-bg;
         border-top: 16px solid $main-color-btn-gradient;
-        border-right: 16px solid $pin-bg-color;
+        border-right: 16px solid $green-color;
         border-bottom: 16px solid $main-color-btn-gradient;
-        border-left: 16px solid $pin-bg-color;
+        border-left: 16px solid $green-color;
         border-radius: 100px;
         animation: loader-anim 2s linear;
-
 
         i {
             font-size: 60px;
             margin: auto;
         }
-
     }
 }

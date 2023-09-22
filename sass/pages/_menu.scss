@@ -1,0 +1,84 @@
+// Mobile first 
+
+header {
+    display: flex;
+    height: 63px;
+
+    nav {
+        display: flex;
+        justify-content: center;
+        width: max-content;
+        margin: 14px 90px 14px 17px;
+        gap: 42px;
+    }
+}
+
+
+.restaurant_palette {
+    background-color: $main-bg-color;
+    position: relative;
+
+    img {
+        position: absolute;
+        object-fit: cover;
+        height: 275px;
+        width: 100%;
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    background-color: $main-bg-color;
+    border-radius: 55px 55px 0 0;
+}
+
+.title-menu {
+    position: relative;
+    display: flex;
+    height: 30px;
+    margin: 32px 15px 40px 10px;
+}
+
+i {
+    position: absolute;
+    top: 41px;
+    left: 282px;
+    font-size: 22px;
+}
+
+.fa-solid {
+    content: "\f004";
+    color: transparent;
+    opacity: 0;
+    background-clip: text;
+    background-image: $btn-gradient-bg;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+.menu-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    h2 {
+        margin-bottom: 12px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        padding: 15px;
+        margin-bottom: 12px;
+        background-color: $white-color;
+    }
+}
