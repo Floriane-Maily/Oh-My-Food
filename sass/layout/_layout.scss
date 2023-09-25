@@ -139,7 +139,11 @@
     }
 
     .fonctionnement {
-        padding: 50px 20px;
+        padding: 50px 180px;
+
+        .title {
+            padding-left: 0;
+        }
 
         .btn {
             width: 300px;
