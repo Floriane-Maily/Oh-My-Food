@@ -1,4 +1,4 @@
-header {
+.header-accueil {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,4 +8,23 @@ header {
         display: flex;
         margin: auto;
     }
+}
+
+.header-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 63px;
+
+    .logo {
+        display: flex;
+        margin: auto;
+    }
+
+    .go-back {
+        position: absolute;
+        top: 30%;
+        left: 4%;
+    }
+
 }
