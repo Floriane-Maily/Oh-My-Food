@@ -121,6 +121,52 @@ h1 {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.9);
 }
 
+.loader-bg {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+  background-color: #99E2D0;
+  animation: fadeout 1s 4s forwards;
+}
+.loader-bg i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  display: flex;
+  font-size: 40px;
+  padding: 30px;
+  color: #99E2D0;
+  background-image: linear-gradient(190deg, #9356DC -11.44%, #FF79DA 123.93%);
+  border-top: 20px solid #9356DC;
+  border-right: 20px solid #FF79DA;
+  border-bottom: 20px solid #9356DC;
+  border-left: 20px solid #FF79DA;
+  border-radius: 100px;
+  animation: loader-anim 2s alternate infinite;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes loader-anim {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1.8);
+  }
+}
 .header-accueil {
   display: flex;
   flex-direction: column;
@@ -218,12 +264,6 @@ footer .font {
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .presentation {
@@ -347,8 +387,9 @@ footer .font {
   }
   .fonctionnement__btn {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
+    font-size: 14px;
   }
   .restaurants {
     padding: 30px;
@@ -368,7 +409,10 @@ footer .font {
     padding: 30px 0 30px 0;
   }
   .fonctionnement {
-    padding: 50px 20px;
+    padding: 50px 180px;
+  }
+  .fonctionnement .title {
+    padding-left: 0;
   }
   .fonctionnement .btn {
     width: 300px;
@@ -470,4 +514,10 @@ footer .font {
   position: absolute;
   left: 90%;
   bottom: 45%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }/*# sourceMappingURL=main.css.map */
