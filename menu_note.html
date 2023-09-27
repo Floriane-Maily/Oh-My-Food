@@ -4,27 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'accueil Oh My Food, réservez le menu qui vous convient</title>
+    <title>La note enchantée</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/a84ac70906.js" crossorigin="anonymous"></script>
-    <link href="./sass/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="main-container">
-        <header>
-            <img class="logo" src="./assets/images/logo/ohmyfood@2x.svg">
-            <img class="go-back" src="/assets/images/fleche.svg">
-        </header>
+    <header class="header-menu">
+        <a href="index.html">
+            <img class="go-back" src="assets/images/icones/fleche.svg"
+                alt="cliquer sur l'icone de la flèche pour retourner à la page d'accueil">
+        </a>
+        <img class="logo" src="assets/images/logo/ohmyfood@2x.svg" alt="logo Oh My Food">
+    </header>
+    <main>
+        <section class="menu-restaurant">
+            <img src="assets/images/restaurants/note.jpg"
+                alt="photo d'un plat au restaurant La palette du goût, nouveau restaurant">
+            <div class="menu">
+                <div class="title-menu">
+                    <h1>La note enchantée</h1>
+                    <i class="fa-heart fa-regular "></i>
+                    <i class="fa-heart fa-solid "></i>
+                </div>
+                <article class="menu-cards">
+                    <h2>ENTREES</h2>
+                    <div class="card">
+                        <h3>Ravioles de foie gras</h3>
+                        <p>Accompagnées de leur crème à la truffe<span class="price">25€</span></p>
+                        <img class="select-btn" src="assets/images/icones/Select button.svg">
+                    </div>
+                    <div class="card">
+                        <h3>Caviar osciètre</h3>
+                        <p>Sur blini à la farine de blé noir<span class="price">35€</span></p>
+                        <img class="select-btn" src="assets/images/icones/Select button.svg">
+                    </div>
+                    <div class="card">
+                        <h3>Homard et espuma de potiron</h3>
+                        <p>Marinés aux zestes d'orange<span class="price">20€</span></p>
+                        <img class="select-btn" src="assets/images/icones/Select button.svg">
+                    </div>
+                    <div class="card">
+                        <h3>Foie gras de canard cuit entier</h3>
+                        <p>Confiture de figue et pain toasté<span class="price">35€</span></p>
+                        <img class="select-btn" src="assets/images/icones/Select button.svg">
+                    </div>
+                </article>
+                <article class="menu-cards">
+                    <h2>PLATS</h2>
+                    <div class="card">
+                        <h3>Noix de coquilles Saint-Jacques</h3>
+                        <p>Sur lit de purée de céleri-rave<span class="price">40€</span></p>
+                        <img class="select-btn" src="assets/images/icones/Select button.svg">
+                    </div>
+                    <div class="card">
+                        <h3>Langoustine poêlée</h3>
+                        <p>Purée de patate douce<span class="price">35€</span></p>
+                        <img class="select-btn" src="assets/images/icones/Select button.svg">
+                    </div>
+                    <div class="card">
+                        <h3>Mijoté de queue de bœuf</h3>
+                        <p>Et riz sauvage aux zestes de citron<span class="price">44€</span></p>
+                        <img class="select-btn" src="assets/images/icones/Select button.svg">
+                    </div>
+                </article>
+                <article class="menu-cards">
+                    <h2>DESSERTS</h2>
+                    <div class="card">
+                        <h3>Macaron noisette et chocolat</h3>
+                        <p>Glace au caramel brun et sel de Guérande<span class="price">18€</span></p>
+                        <img class="select-btn" src="assets/images/icones/Select button.svg">
+                    </div>
+                    <div class="card">
+                        <h3>Baba au rhum revisité</h3>
+                        <p>Avec son coulis de citron<span class="price">22€</span></p>
+                        <img class="select-btn" src="assets/images/icones/Select button.svg">
+                    </div>
+                    <div class="card">
+                        <h3>Tarte au citron meringuée</h3>
+                        <p>Destructurée<span class="price">23€</span></p>
+                        <img class="select-btn" src="assets/images/icones/Select button.svg">
+                    </div>
+                </article>
+                <button class="menu-btn-gradient">Commander</button>
+            </div>
 
 
-
-
-    </div>
-
+        </section>
+    </main>
+    <footer class="footer-menu">
+        <p class="logo">Ohmyfood</p>
+        <ul>
+            <li>
+                <img src="./assets/images/icones/couverts.svg" alt="icone représentant des couverts">
+                <a class="font" href="">Proposer un restaurant</a>
+            </li>
+            <li>
+                <img src="./assets/images/icones/shakehands.svg" alt="icone représentant une poignée de mains">
+                <a class="font" href="">Devenir partenaire</a>
+            </li>
+            <li><a href="">Mentions légales</a></li>
+            <li><a href="mailto:contact@ohmyfood.com">Contactez-nous</a></li>
+        </ul>
+    </footer>
 
 </body>
 

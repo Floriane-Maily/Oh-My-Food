@@ -1,12 +1,10 @@
 .header-accueil {
-    display: flex;
-    flex-direction: column;
+    @include flex;
     justify-content: center;
     height: 113px;
 
     .logo {
-        display: flex;
-        margin: auto;
+        @include header-logo;
     }
 }
 
@@ -17,8 +15,7 @@
     height: 63px;
 
     .logo {
-        display: flex;
-        margin: auto;
+        @include header-logo;
     }
 
     .go-back {

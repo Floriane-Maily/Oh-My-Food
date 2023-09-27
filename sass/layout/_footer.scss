@@ -1,12 +1,10 @@
 footer {
-    display: flex;
-    flex-direction: column;
+    @include flex;
     background-color: $dark-grey-color;
     padding: 22px 25px;
     row-gap: 16px;
 
     .logo {
-        font-family: $secondary-font-family;
         color: $white-color;
         font-size: 18px;
     }

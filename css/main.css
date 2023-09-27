@@ -7,6 +7,11 @@ a {
   color: #101010;
 }
 
+.logo,
+.title-menu h1 {
+  font-family: "Shrikhand";
+}
+
 h1 {
   font-size: 24px;
   font-weight: 700;
@@ -39,7 +44,6 @@ h1 {
 
 .title-menu h1 {
   font-size: 28px;
-  font-family: "Shrikhand";
 }
 
 .menu-cards h2 {
@@ -97,7 +101,6 @@ h1 {
   align-items: center;
   margin: auto;
   margin-top: 40px;
-  margin-bottom: 40px;
 }
 .menu-btn-gradient:hover {
   opacity: 0.7;
@@ -142,10 +145,10 @@ h1 {
   padding: 30px;
   color: #99E2D0;
   background-image: linear-gradient(190deg, #9356DC -11.44%, #FF79DA 123.93%);
-  border-top: 20px solid #9356DC;
-  border-right: 20px solid #FF79DA;
-  border-bottom: 20px solid #9356DC;
-  border-left: 20px solid #FF79DA;
+  border-top: 15px solid #9356DC;
+  border-right: 15px solid #FF79DA;
+  border-bottom: 15px solid #9356DC;
+  border-left: 15px solid #FF79DA;
   border-radius: 100px;
   animation: loader-anim 2s alternate infinite;
 }
@@ -202,7 +205,6 @@ footer {
   row-gap: 16px;
 }
 footer .logo {
-  font-family: "Shrikhand";
   color: white;
   font-size: 18px;
 }
@@ -333,8 +335,6 @@ footer .font {
   border-radius: 15px;
 }
 .restaurants__cards .card img {
-  -o-object-fit: cover;
-     object-fit: cover;
   height: 174px;
   width: 100%;
   border-radius: 15px 15px 0 0;
@@ -440,39 +440,39 @@ footer .font {
     left: 70%;
   }
 }
-.restaurant_palette {
-  background-color: #F6F6F6;
+.menu-restaurant {
+  position: relative;
+  background-color: pink;
 }
-.restaurant_palette img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.menu-restaurant img {
   height: 275px;
   width: 100%;
 }
 
 .menu {
+  position: relative;
+  bottom: 55px;
   width: 100%;
-  background-color: #F6F6F6;
+  background-color: pink;
   border-radius: 55px 55px 0 0;
 }
-.menu .title-menu {
+
+.title-menu {
   position: relative;
-  display: flex;
-  height: 30px;
-  margin: 32px 15px 40px 15px;
+  padding: 30px 0 0 15px;
 }
-.menu .title-menu i {
+.title-menu i {
   position: absolute;
-  top: 35%;
-  left: 92%;
+  left: 88%;
+  bottom: 9px;
   font-size: 22px;
 }
-.menu .title-menu .fa-solid {
+.title-menu .fa-solid {
   color: transparent;
   opacity: 0;
   transition: all 1s linear;
 }
-.menu .title-menu .fa-solid:hover {
+.title-menu .fa-solid:hover {
   opacity: 1;
   -webkit-background-clip: text;
   background-clip: text;
@@ -499,9 +499,9 @@ footer .font {
   width: 40px;
 }
 .menu-cards .card {
-  position: relative;
   display: flex;
   flex-direction: column;
+  position: relative;
   height: 69px;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -510,14 +510,33 @@ footer .font {
   gap: 5px;
   background-color: white;
 }
-.menu-cards .price {
+.menu-cards .card .price {
   position: absolute;
-  left: 90%;
-  bottom: 45%;
+  left: 88%;
+  bottom: 43%;
+}
+.menu-cards .card .select-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 69px;
+  width: 59px;
 }
 
+@media screen and (min-width: 768px) {
+  .menu.cards {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */

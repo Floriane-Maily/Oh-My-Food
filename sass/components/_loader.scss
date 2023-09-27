@@ -20,10 +20,10 @@
         padding: 30px;
         color: $green-color;
         background-image: $btn-gradient-bg;
-        border-top: 20px solid $main-color-btn-gradient;
-        border-right: 20px solid $second-color-btn-gradient;
-        border-bottom: 20px solid $main-color-btn-gradient;
-        border-left: 20px solid $second-color-btn-gradient;
+        border-top: 15px solid $main-color-btn-gradient;
+        border-right: 15px solid $second-color-btn-gradient;
+        border-bottom: 15px solid $main-color-btn-gradient;
+        border-left: 15px solid $second-color-btn-gradient;
         border-radius: 100px;
         animation: loader-anim 2s alternate infinite;
     }
