@@ -67,6 +67,7 @@
     border-radius: 15px;
 
     img {
+        object-fit: cover;
         height: 174px;
         width: 100%;
         border-radius: 15px 15px 0 0;
@@ -90,7 +91,6 @@
         .fa-solid {
             @include fill-heart;
         }
-
     }
 }
 
@@ -133,7 +133,7 @@
 
 // Version desktop
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 2560px) {
 
     .presentation {
         height: auto;
