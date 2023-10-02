@@ -13,6 +13,7 @@
     position: relative;
     bottom: 55px;
     width: 100%;
+    padding-bottom: 5px;
     background-color: $main-bg-color;
     border-radius: 55px 55px 0 0;
 }
@@ -55,63 +56,129 @@
         }
     }
 
+
     .card {
-        @include flex;
-        position: relative;
+        display: flex;
+        align-items: center;
         height: 69px;
+        width: 100%;
         border-radius: 20px;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-        padding: 15px;
         margin-bottom: 12px;
         gap: 5px;
         background-color: $white-color;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
-        .price {
-            position: absolute;
-            left: 88%;
-            bottom: 43%;
-        }
-
-        .select-btn {
-            visibility: hidden;
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 69px;
-            width: 59px;
+        .card-txt {
+            padding-left: 15px;
+            position: relative;
+            flex-grow: 1;
+            white-space: nowrap;
+            overflow: hidden;
             text-overflow: ellipsis;
 
-            &:hover {
-                visibility: visible;
+            h3,
+            p {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+        }
+
+        .price {
+            display: flex;
+            padding-right: 20px;
+        }
+
+        .check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 69px;
+            width: 59px;
+            margin-right: -60px;
+            border-radius: 0 20px 20px 0;
+            background-color: $green-color;
+
+            .fa-check {
+                border-radius: 30px;
+                color: $green-color;
+                background-color: white;
+                padding: 5px;
             }
         }
     }
 }
 
-.entrees-card {
-    animation: fadein 1s ease-in;
-}
+//     &:hover {
 
-.plats-card {
-    animation: fadein 1.5s ease-in;
-}
+//         .check,
+//         .price {
+//             animation: slide-left 0.8s ease-in forwards;
+//         }
 
-.desserts-card {
-    animation: fadein 2s ease-in;
-}
+//         .fa-check {
+//             animation: rotate-check 0.9s ease-in;
 
-@keyframes fadein {
-    from {
-        transform: scale(0);
-        opacity: 0;
-    }
 
-    to {
-        transform: scale(1);
-        opacity: 1;
+//         }
+//     }
+// }
 
-    }
-}
+
+
+// @keyframes slide-left {
+//     from {
+//         margin-right: -60px;
+//     }
+
+//     to {
+//         margin-right: 0px;
+//     }
+// }
+
+// @keyframes rotate-check {
+//     from {
+//         rotate: 0deg;
+//     }
+
+//     to {
+//         rotate: 360deg;
+//     }
+
+// }
+
+
+
+
+
+// .entrees {
+//     animation: fadein 1s ease-in;
+// }
+
+// .plats {
+//     animation: fadein 1.5s ease-in;
+// }
+
+// .desserts {
+//     animation: fadein 2s ease-in;
+// }
+
+// @keyframes fadein {
+//     from {
+//         transform: scale(0);
+//         opacity: 0;
+//     }
+
+//     to {
+//         transform: scale(1);
+//         opacity: 1;
+
+//     }
+// }
 
 
 // version tablette
@@ -159,7 +226,4 @@
         padding-right: 25%;
 
     }
-
-
-
 }

@@ -1,5 +1,5 @@
 .presentation {
-    @include flex;
+    @include flex-column;
     background-color: $main-bg-color;
     height: 287px;
     text-align: center;
@@ -12,7 +12,7 @@
 
 
 .fonctionnement {
-    @include flex;
+    @include flex-column;
     height: 440px;
     padding-top: 48px;
 
@@ -21,7 +21,7 @@
     }
 
     &__btn {
-        @include flex;
+        @include flex-column;
 
         .ellipse {
             position: relative;
@@ -29,7 +29,12 @@
         }
 
         .number {
-            @include number;
+            color: $white-color;
+            font-size: 14px;
+            font-weight: 500;
+            position: relative;
+            right: 27px;
+            bottom: 0.2px;
         }
 
         .content {
@@ -74,7 +79,19 @@
     }
 
     .badge {
-        @include nouveau;
+        position: absolute;
+        bottom: 80%;
+        left: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 29px;
+        border-radius: 2px;
+        background-color: $green-color;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        color: $dark-green-color;
+        font-weight: 500;
     }
 
     .card-content {

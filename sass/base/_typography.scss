@@ -12,12 +12,15 @@ a {
     font-family: $secondary-font-family;
 }
 
+
+
+// index.html
+
 h1 {
     font-size: 24px;
     font-weight: 700;
 }
 
-// index.html
 .presentation {
     p {
         color: $dark-grey-color;
@@ -57,7 +60,6 @@ h1 {
 }
 
 
-
 // menus
 
 .title-menu h1 {
@@ -80,5 +82,5 @@ h1 {
 }
 
 .price {
-    font-weight: 700;
+    font-weight: bold;
 }

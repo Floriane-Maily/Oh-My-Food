@@ -1,10 +1,11 @@
 .header-accueil {
-    @include flex;
+    @include flex-column;
     justify-content: center;
     height: 113px;
 
     .logo {
-        @include header-logo;
+        display: flex;
+        margin: auto;
     }
 }
 
@@ -15,7 +16,8 @@
     height: 63px;
 
     .logo {
-        @include header-logo;
+        display: flex;
+        margin: auto;
     }
 
     .go-back {
