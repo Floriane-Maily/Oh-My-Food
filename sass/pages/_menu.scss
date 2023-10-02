@@ -35,6 +35,31 @@
 
 }
 
+.entrees {
+    animation: fadein 1s ease-in;
+}
+
+.plats {
+    animation: fadein 1.5s ease-in;
+}
+
+.desserts {
+    animation: fadein 2s ease-in;
+}
+
+@keyframes fadein {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+
+    }
+}
+
 .menu-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -55,7 +80,6 @@
             width: 40px;
         }
     }
-
 
     .card {
         display: flex;
@@ -85,7 +109,6 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-
         }
 
         .price {
@@ -111,74 +134,43 @@
             }
         }
     }
+
+    .card:hover {
+
+        .check,
+        .price {
+            animation: slide-left 0.8s ease-in forwards;
+        }
+
+        .fa-check {
+            animation: rotate-check 1s ease-in;
+
+
+        }
+    }
 }
 
-//     &:hover {
 
-//         .check,
-//         .price {
-//             animation: slide-left 0.8s ease-in forwards;
-//         }
+@keyframes slide-left {
+    from {
+        margin-right: -60px;
+    }
 
-//         .fa-check {
-//             animation: rotate-check 0.9s ease-in;
+    to {
+        margin-right: 0px;
+    }
+}
 
+@keyframes rotate-check {
+    from {
+        rotate: 0deg;
+    }
 
-//         }
-//     }
-// }
+    to {
+        rotate: 360deg;
+    }
 
-
-
-// @keyframes slide-left {
-//     from {
-//         margin-right: -60px;
-//     }
-
-//     to {
-//         margin-right: 0px;
-//     }
-// }
-
-// @keyframes rotate-check {
-//     from {
-//         rotate: 0deg;
-//     }
-
-//     to {
-//         rotate: 360deg;
-//     }
-
-// }
-
-
-
-
-
-// .entrees {
-//     animation: fadein 1s ease-in;
-// }
-
-// .plats {
-//     animation: fadein 1.5s ease-in;
-// }
-
-// .desserts {
-//     animation: fadein 2s ease-in;
-// }
-
-// @keyframes fadein {
-//     from {
-//         transform: scale(0);
-//         opacity: 0;
-//     }
-
-//     to {
-//         transform: scale(1);
-//         opacity: 1;
-
-//     }
-// }
+}
 
 
 // version tablette
@@ -224,6 +216,5 @@
     .menu-cards {
         padding-left: 25%;
         padding-right: 25%;
-
     }
 }
