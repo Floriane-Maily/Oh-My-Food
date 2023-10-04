@@ -91,23 +91,18 @@
         margin-bottom: 12px;
         gap: 5px;
         background-color: $white-color;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        @include overflow;
+
 
         .card-txt {
             padding-left: 15px;
             position: relative;
             flex-grow: 1;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            @include overflow;
 
             h3,
             p {
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                @include overflow;
             }
         }
 
@@ -129,7 +124,7 @@
             .fa-check {
                 border-radius: 30px;
                 color: $green-color;
-                background-color: white;
+                background-color: $white-color;
                 padding: 5px;
             }
         }
@@ -139,13 +134,11 @@
 
         .check,
         .price {
-            animation: slide-left 0.8s ease-in forwards;
+            animation: slide-left 0.5s ease-in forwards;
         }
 
         .fa-check {
-            animation: rotate-check 1s ease-in;
-
-
+            animation: rotate-check 0.5s ease-in;
         }
     }
 }
@@ -167,11 +160,9 @@
     }
 
     to {
-        rotate: 360deg;
+        rotate: 180deg;
     }
-
 }
-
 
 // version tablette
 
@@ -198,8 +189,6 @@
 
     }
 }
-
-
 
 // version desktop
 

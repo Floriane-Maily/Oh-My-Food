@@ -1,10 +1,8 @@
 footer {
     @include flex-column;
-    position: relative;
     background-color: $dark-grey-color;
     padding: 22px 25px;
     row-gap: 16px;
-    margin-top: -55px;
 
     .logo {
         color: $white-color;
@@ -23,6 +21,12 @@ footer {
     .font {
         font-weight: 500;
     }
+}
+
+.footer-menu {
+    position: relative;
+    margin-top: -55px;
+
 }
 
 

@@ -25,10 +25,15 @@
         background-clip: text;
         background-image: $btn-gradient-bg;
     }
-
 }
 
 @mixin flex-column {
     display: flex;
     flex-direction: column;
+}
+
+@mixin overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

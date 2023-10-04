@@ -122,7 +122,7 @@ h1 {
 }
 .btn:hover {
   opacity: 0.7;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .loader-bg {
@@ -151,7 +151,7 @@ h1 {
   border-bottom: 15px solid #9356DC;
   border-left: 15px solid #FF79DA;
   border-radius: 100px;
-  animation: loader-anim 2s alternate infinite;
+  animation: loader-anim 1.5s alternate infinite;
 }
 
 @keyframes fadeout {
@@ -201,11 +201,9 @@ h1 {
 footer {
   display: flex;
   flex-direction: column;
-  position: relative;
   background-color: #353535;
   padding: 22px 25px;
   row-gap: 16px;
-  margin-top: -55px;
 }
 footer .logo {
   color: white;
@@ -220,6 +218,11 @@ footer a {
 }
 footer .font {
   font-weight: 500;
+}
+
+.footer-menu {
+  position: relative;
+  margin-top: -55px;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 2560px) {
@@ -578,10 +581,10 @@ footer .font {
 }
 .menu-cards .card:hover .check,
 .menu-cards .card:hover .price {
-  animation: slide-left 0.8s ease-in forwards;
+  animation: slide-left 0.5s ease-in forwards;
 }
 .menu-cards .card:hover .fa-check {
-  animation: rotate-check 1s ease-in;
+  animation: rotate-check 0.5s ease-in;
 }
 
 @keyframes slide-left {
@@ -597,7 +600,7 @@ footer .font {
     rotate: 0deg;
   }
   to {
-    rotate: 360deg;
+    rotate: 180deg;
   }
 }
 @media screen and (min-width: 768px) {
