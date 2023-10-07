@@ -14,8 +14,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        translate: -50% -50%;
-        display: flex;
+        transform: translate(-50%, -50%);
         font-size: 40px;
         padding: 30px;
         color: $green-color;
@@ -43,11 +42,10 @@
 
 @keyframes loader-anim {
     from {
-        transform: rotate(0deg) scale(1);
+        transform: translate(-50%, -50%) rotate(0) scale(1);
     }
 
     to {
-        transform: rotate(360deg) scale(1.8);
-
+        transform: translate(-50%, -50%) rotate(360deg) scale(1.8);
     }
 }
